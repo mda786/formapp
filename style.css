@@ -1,0 +1,256 @@
+
+.formcontainer{
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    width:45vw ;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+.formcontainer h1{
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px;
+}
+.formcontainer .bodySpan{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    color: gray;
+    font-weight: 600;
+    
+}
+.container{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+.container .wrapper{
+    width: 90%;
+    padding:0px  20px;
+    background-color: white;
+    border-radius: 5px;
+    /* margin-top: -30px; */
+    /* box-shadow: 0px 0px 5px black; */
+}
+
+.container .wrapper h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container .wrapper .form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .wrapper .form .inputdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 43%;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 0px;
+    margin: 10px 3px;
+}
+.container .wrapper .form .inputdiv .input{
+    padding: 10px;
+    width: 89%;
+}
+.container .wrapper .form .lable{
+    flex: 1;
+    min-width: 60%;
+    margin-top:5px;
+    margin-bottom: -15px;
+    padding: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.container .wrapper .form .lable input{
+    cursor: pointer;
+}
+.container .wrapper .form .radioContainer{
+    flex: 1;
+    min-width: 48%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:5px;
+}
+.container .wrapper .form .radioContainer .radio{
+    margin-top: 15px;
+    padding: 0;
+    width: 50%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+ .container .wrapper .form .radioContainer .radio input{
+    cursor: pointer;
+    width: 20px;
+ }
+ .container .wrapper .form .file{
+    margin-top:15px;
+    margin-bottom: 3px;
+    font-size: 15px;
+ }
+ .pcontainer{
+    height: 2vh;
+    padding-top: 10px;
+    border: none;
+ }
+
+.container .progress{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(175, 173, 173);
+ }
+ .container .progress span{
+    height: 5px;
+    border-radius: 5px;
+    background-color:green;
+ }
+ .bcontainer{
+    height: 3vh;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+ }
+ .container .button{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border:2px red solid; */
+    border-radius: 5px;
+ }
+ .container .button button{
+    padding: 7px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+
+.formDemoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),url('assets/bgi.jpg') center;
+    overflow: hidden;
+}
+.formDemoWrapper{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px 50px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3px;
+}
+.formDemoWrapper h3{
+    font-weight: 300;
+    margin: 5px;
+}
+.header{
+    width: 100%;
+    text-align:center;
+    padding:10px 0px;
+    border-bottom: 1px solid gray;
+    /* margin: 5px; */
+}
+.header h1{
+    font-weight: 500;
+    color: green;
+    margin-bottom: 10px;
+}
+.header h2{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.formDemoContent{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid gray;
+    /* margin: 5px; */
+    flex-wrap: wrap;
+}
+.spanDiv{
+    padding: 5px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width:48%;
+    border-bottom: 1px solid gray;
+}
+.spanDiv .rightSpan{
+    width: 59%;
+}
+.spanDiv .leftSpan{
+    width: 38%;
+}
+
+@media only screen and (max-width:426px){
+    .container{
+        width:80vw;
+        height: auto;
+        overflow-y: scroll;
+
+    }
+    .formcontainer{
+        width:82vw;
+        margin: 13px;
+        overflow-y: scroll;
+    }
+    .container .wrapper .form{
+        flex-direction: column;
+    }
+    .formDemoWrapper{
+        width: 100vw;
+    }
+    .formDemoContent{
+        flex-direction: column;
+    }
+
+    
+}
+@media only screen and (max-width:800px){
+    .formDemoContent .spanDiv{
+        width: 100%;
+    }
+    .formDemoWrapper{
+        width: 80vw;
+    }
+}
+
+
